@@ -6,7 +6,7 @@ library(xml2)
 url <- "http://insideairbnb.com/get-the-data.html"
 html_list <- read_html(url)
 
-# 
+# Scrape table contents into an object
 city_table <- html_list %>% 
   html_nodes("table")
 
